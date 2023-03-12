@@ -1,25 +1,19 @@
 module.exports = {
-  printWidth: 120, //单行长度
-  tabWidth: 2, //缩进长度
+  printWidth: 120,
+  tabWidth: 2,
   useTabs: false,
-  semi: false, //句末使用分号
-  vueIndentScriptAndStyle: false, //不对vue中的script及style标签缩进
-
-  singleQuote: true, //使用单引号
-
-  // Change when properties in objects are quoted.
+  semi: false,
+  singleQuote: true,
   quoteProps: 'consistent',
-  bracketSpacing: true, //在对象前后添加空格-eg: { foo: bar }
-  // 尾后逗号
-  trailingComma: 'none',
+  bracketSpacing: true,
+  trailingComma: 'es5',
   jsxSingleQuote: false,
-  arrowParens: 'always', //单参数箭头函数参数周围使用圆括号-eg: (x) => x
+  arrowParens: 'always',
   insertPragma: false,
-  requirePragma: false, //无需顶部注释即可格式化
   requirePragma: false,
   proseWrap: 'never',
   singleQuote: true,
-  htmlWhitespaceSensitivity: 'strict', //对HTML全局空白不敏感
+  htmlWhitespaceSensitivity: 'strict',
   endOfLine: 'auto',
-  rangeStart: 0
+  rangeStart: 0,
 }
