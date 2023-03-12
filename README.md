@@ -55,6 +55,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 - [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [With Tailwind CSS](https://tailwindcss.com/docs/installation) - learn about Tailwind CSS features and API.
+- [With TypeScript](https://www.typescriptlang.org/docs/) - learn about TypeScript features and API.
+- [With ESLint](https://eslint.org/docs/user-guide/getting-started) - learn about ESLint features and API.
+- [With Prettier](https://prettier.io/docs/en/index.html) - learn about Prettier features and API.
 
 ## Contribution
 
