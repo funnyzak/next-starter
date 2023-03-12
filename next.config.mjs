@@ -13,6 +13,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+
+  // safe config
+  poweredByHeader: false,
 }
 
 export default nextConfig
