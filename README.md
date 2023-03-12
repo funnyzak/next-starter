@@ -15,11 +15,12 @@
 [sg-image]: https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=flat-square
 [tag-image]: https://img.shields.io/github/tag/funnyzak/next-starter.svg
 
-This project is a front-end web application built with Next.js and React, using JavaScript, CSS, and HTML for development.
+Next-Starter is a front-end web application base on Next.js 13, It is a good start for your next project.
 
 ## Features
 
 - Build with Next.js 13;
+- With prisma for database;
 - With Tailwind CSS and PostCSS for styling;
 - With TypeScript for type checking;
 - With ESLint and Prettier for code linting;
@@ -30,11 +31,7 @@ This project is a front-end web application built with Next.js and React, using 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -46,6 +43,40 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Development
+
+Follow is useful commands for development.
+
+```bash
+# prisma db migrate and generate
+yarn prisma:dev
+
+# production build
+yarn build
+
+# start production server
+yarn start
+
+# run lint
+yarn lint
+
+# export static html
+yarn export
+
+# lint and fix
+yarn lint:fix
+
+# style and fix
+yarn style:fix
+
+# clean node_modules
+yarn clean
+
+# deps upgrade
+yarn npm:check
+
+```
 
 ## Deploy on Vercel
 
