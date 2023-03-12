@@ -39,3 +39,5 @@ next-env.d.ts
 
 # husky
 .husky/_
+
+.eslintcache
