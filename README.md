@@ -19,7 +19,10 @@ This project is a front-end web application built with Next.js and React, using 
 
 ## Features
 
-- With Tailwind CSS and PostCSS for styling
+- With Tailwind CSS and PostCSS for styling;
+- With TypeScript for type checking;
+- With ESLint and Prettier for code linting;
+- With Lint Staged and Husky for pre-commit linting;
 
 ## Getting Started
 
