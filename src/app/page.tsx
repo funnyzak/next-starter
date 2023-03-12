@@ -41,7 +41,13 @@ export default function Home() {
           priority
         />
         <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+          <Image
+            src="/thirteen.svg"
+            alt="13"
+            width={40}
+            height={31}
+            priority
+          />
         </div>
       </div>
 
@@ -69,7 +75,9 @@ export default function Home() {
           <h2 className={inter.className}>
             Templates <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
+          <p className={inter.className}>
+            Explore the Next.js 13 playground.
+          </p>
         </a>
 
         <a
@@ -82,7 +90,8 @@ export default function Home() {
             Deploy <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Instantly deploy your Next.js site to a shareable URL with
+            Vercel.
           </p>
         </a>
       </div>
