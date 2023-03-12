@@ -41,3 +41,7 @@ next-env.d.ts
 .husky/_
 
 .eslintcache
+
+# prisma
+*.db
+**journal
