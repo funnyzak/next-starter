@@ -7,7 +7,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "patch-package",
+    "clean": "npx rimraf node_modules",
+    "clean:cache": "npx rimraf node_modules/.cache",
+    "npm:check": "npx npm-check-updates",
+    "lint-staged": "lint-staged",
+    "prepare": "if [[ $NODE_ENV != \"production\" ]]; then husky install; fi && patch-package"
   },
   "dependencies": {
     "@types/node": "18.15.0",
@@ -21,7 +27,21 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
-    "prettier": "2.8.4"
+    "husky": "8.0.3",
+    "lint-staged": "13.2.0",
+    "npm-check-updates": "16.7.12",
+    "patch-package": "6.5.1",
+    "prettier": "2.8.4",
+    "rimraf": "4.4.0"
+  },
+  "lint-staged": {
+    "*.{js,cjs,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --cache"
+    ],
+    "*.{md,html,json,css,less,scss,sass}": [
+      "prettier --write"
+    ]
   },
   "license": "MIT",
   "bugs": {
