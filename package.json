@@ -1,7 +1,33 @@
 {
   "name": "next-starter",
   "version": "0.1.0",
-  "private": true,
+  "description": "This project is a front-end web application built with Next.js and React, using JavaScript, CSS, and HTML for development.",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funnyzak/next-starter.git"
+  },
+  "keywords": [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "CSS",
+    "HTML",
+    "web development",
+    "front-end development",
+    "responsive design",
+    "static site generation",
+    "server-side rendering",
+    "SEO optimization",
+    "RESTful API",
+    "GraphQL",
+    "TypeScript",
+    "Git",
+    "npm",
+    "ESLint",
+    "Prettier"
+  ],
+  "author": "leon <silenceace@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,5 +44,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
-  }
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/funnyzak/next-starter/issues"
+  },
+  "homepage": "https://github.com/funnyzak/next-starter#readme"
 }
