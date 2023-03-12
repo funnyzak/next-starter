@@ -20,6 +20,7 @@
     "prepare": "if [[ $NODE_ENV != \"production\" ]]; then husky install; fi && patch-package"
   },
   "dependencies": {
+    "@prisma/client": "4.11.0",
     "@tailwindcss/forms": "0.5.3",
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
@@ -29,7 +30,8 @@
     "next": "13.2.4",
     "prisma": "4.11.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "zod": "3.21.4"
   },
   "devDependencies": {
     "@types/eslint": "8.21.1",

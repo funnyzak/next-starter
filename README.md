@@ -19,6 +19,7 @@ This project is a front-end web application built with Next.js and React, using 
 
 ## Features
 
+- Build with Next.js 13;
 - With Tailwind CSS and PostCSS for styling;
 - With TypeScript for type checking;
 - With ESLint and Prettier for code linting;

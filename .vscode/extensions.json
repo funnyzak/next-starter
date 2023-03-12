@@ -1,3 +1,8 @@
 {
-  "recommendations": ["esbenp.prettier-vscode", "rvest.vs-code-prettier-eslint", "bradlc.vscode-tailwindcss"]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "bradlc.vscode-tailwindcss",
+    "prisma.prisma"
+  ]
 }
