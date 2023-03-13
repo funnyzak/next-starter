@@ -13,6 +13,5 @@ export default function handler(
   logger.info('Hello from Next.js API route')
   res
     .status(200)
-    .setHeader('Content-Type', 'application/json')
     .json({ name: 'Hello', time: new Date().toISOString() })
 }

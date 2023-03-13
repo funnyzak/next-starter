@@ -23,8 +23,14 @@
     "prepare": "if [[ $NODE_ENV != \"production\" ]]; then husky install; fi && patch-package"
   },
   "dependencies": {
+    "@next-auth/prisma-adapter": "1.0.5",
     "@prisma/client": "4.11.0",
     "@tailwindcss/forms": "0.5.3",
+    "@tanstack/react-query": "4.26.1",
+    "@trpc/client": "10.15.0",
+    "@trpc/next": "10.15.0",
+    "@trpc/react-query": "10.15.0",
+    "@trpc/server": "10.15.0",
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
@@ -35,10 +41,12 @@
     "eslint-config-next": "13.2.4",
     "jsencrypt": "3.3.2",
     "next": "13.2.4",
+    "next-auth": "4.20.1",
     "pino": "8.11.0",
     "prisma": "4.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "superjson": "1.12.2",
     "tailwind-merge": "1.10.0",
     "zod": "3.21.4"
   },
