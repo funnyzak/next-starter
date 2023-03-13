@@ -1,7 +1,3 @@
-import { API_CODE, ERROR_MSG } from './utils/type'
-/* Description: Middleware for Next.js
- * more info: https://nextjs.org/docs/advanced-features/middleware
- */
 import { env } from '@/env.mjs'
 import {
   NextFetchEvent,
@@ -10,9 +6,9 @@ import {
 } from 'next/server'
 import { isDev } from './utils'
 
+import { LOG_TYPE } from '@/utils/type'
 import { Ratelimit } from '@upstash/ratelimit'
 import { Redis } from '@upstash/redis'
-import { LOG_TYPE } from '@/utils/type'
 
 const ratelimit = new Ratelimit({
   redis: Redis.fromEnv(),
