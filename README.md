@@ -25,6 +25,7 @@ Next-Starter is a front-end web application base on Next.js 13, It is a good sta
 - With TypeScript for type checking;
 - With ESLint and Prettier for code linting;
 - With Lint Staged and Husky for pre-commit linting;
+- Add rate limit for API;
 
 ## Getting Started
 
@@ -75,6 +76,9 @@ yarn clean
 
 # deps upgrade
 yarn npm:check
+
+# dev with specific env file (default is .env.development)
+npx dotenv -e .env._test npx next dev
 
 ```
 

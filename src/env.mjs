@@ -6,7 +6,8 @@ import { z } from 'zod'
  */
 const server = z.object({
   DATABASE_URL: z.string().url(),
-  NODE_ENV: z.enum(['development', 'production', 'live']),
+  NODE_ENV: z.enum(['development', 'production']),
+  RATE_LIMIT_COUNT: z.number().int().min(1),
 })
 
 /**
@@ -26,6 +27,7 @@ const client = z.object({
 const processEnv = {
   DATABASE_URL: process.env.DATABASE_URL,
   NODE_ENV: process.env.NODE_ENV,
+  RATE_LIMIT_COUNT: parseInt(process.env.RATE_LIMIT_COUNT),
 }
 
 // Don't touch the part below
