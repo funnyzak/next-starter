@@ -12,7 +12,7 @@ import { Redis } from '@upstash/redis'
 
 const ratelimit = new Ratelimit({
   redis: Redis.fromEnv(),
-  limiter: Ratelimit.fixedWindow(env.RATE_LIMIT_COUNT, '1 d'),
+  limiter: Ratelimit.fixedWindow(env.RATE_LIMIT_COUNT || 10, '1 d'),
   analytics: true,
 })
 

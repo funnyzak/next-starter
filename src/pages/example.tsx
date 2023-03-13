@@ -17,7 +17,7 @@ const ExamplePage = () => {
   })
   useEffect(() => {
     addExample.mutate()
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div className="h-screen">
       <h1>{helloQuery.data?.greeting}</h1>
