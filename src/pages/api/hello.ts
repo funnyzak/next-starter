@@ -1,13 +1,18 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { logger } from '@/utils'
 
-type Data = {
-  name: string
+export const config = {
+  runtime: 'nodejs',
 }
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse
 ) {
-  res.status(200).json({ name: 'John Doe' })
+  logger.info('Hello from Next.js API route')
+  res
+    .status(200)
+    .setHeader('Content-Type', 'application/json')
+    .json({ name: 'Hello', time: new Date().toISOString() })
 }
