@@ -1,7 +1,7 @@
 {
   "name": "next-starter",
   "version": "0.1.0",
-  "description": "This project is a front-end web application built with Next.js and React, using JavaScript, CSS, and HTML for development.",
+  "description": "NEXT-Starter is a front-end project scaffold based on Next.js 13, which is a good starting point for your next project.",
   "private": false,
   "scripts": {
     "postinstall": "patch-package && prisma generate",
@@ -98,5 +98,8 @@
     "ESLint",
     "Prettier"
   ],
-  "author": "leon <silenceace@gmail.com>"
+  "author": "leon <silenceace@gmail.com>",
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }

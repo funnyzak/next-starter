@@ -1,8 +1,8 @@
 # Next Starter
 
-<!-- [![action][ci-image]][ci-url] [![Release Date][rle-image]][rle-url] [![GitHub last commit][last-commit-image]][repository-url] [![tag][tag-image]][rle-url] [![license][license-image]][repository-url] -->
+[![action][ci-image]][ci-url] [![Release Date][rle-image]][rle-url] [![GitHub last commit][last-commit-image]][repository-url] [![tag][tag-image]][rle-url] [![license][license-image]][repository-url]
 
-[ci-image]: https://github.com/funnyzak/next-starter/actions/workflows/ci.yml/badge.svg
+[ci-image]: https://github.com/funnyzak/next-starter/actions/workflows/test.yml/badge.svg
 [ci-url]: https://github.com/funnyzak/next-starter/actions
 [license-image]: https://img.shields.io/github/license/funnyzak/next-starter.svg?style=flat-square
 [repository-url]: https://github.com/funnyzak/next-starter
@@ -15,7 +15,7 @@
 [sg-image]: https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=flat-square
 [tag-image]: https://img.shields.io/github/tag/funnyzak/next-starter.svg
 
-Next-Starter is a front-end web application base on Next.js 13, It is a good start for your next project.
+NEXT-Starter is a front-end project scaffold based on Next.js 13, which is a good starting point for your next project.
 
 ## Features
 
@@ -37,13 +37,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Development
 
