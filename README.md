@@ -1,8 +1,8 @@
 # Next Starter
 
-<!-- [![action][ci-image]][ci-url] [![Release Date][rle-image]][rle-url] [![GitHub last commit][last-commit-image]][repository-url] [![tag][tag-image]][rle-url] [![license][license-image]][repository-url] -->
+[![action][ci-image]][ci-url] [![Release Date][rle-image]][rle-url] [![GitHub last commit][last-commit-image]][repository-url] [![tag][tag-image]][rle-url] [![license][license-image]][repository-url]
 
-[ci-image]: https://github.com/funnyzak/next-starter/actions/workflows/ci.yml/badge.svg
+[ci-image]: https://github.com/funnyzak/next-starter/actions/workflows/test.yml/badge.svg
 [ci-url]: https://github.com/funnyzak/next-starter/actions
 [license-image]: https://img.shields.io/github/license/funnyzak/next-starter.svg?style=flat-square
 [repository-url]: https://github.com/funnyzak/next-starter
@@ -15,7 +15,7 @@
 [sg-image]: https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=flat-square
 [tag-image]: https://img.shields.io/github/tag/funnyzak/next-starter.svg
 
-Next-Starter is a front-end web application base on Next.js 13, It is a good start for your next project.
+NEXT-Starter is a front-end project scaffold based on Next.js 13, which is a good starting point for your next project.
 
 ## Features
 
@@ -25,6 +25,9 @@ Next-Starter is a front-end web application base on Next.js 13, It is a good sta
 - With TypeScript for type checking;
 - With ESLint and Prettier for code linting;
 - With Lint Staged and Husky for pre-commit linting;
+- Add rate limit for API;
+- Create with t3-cli;
+- With Next-auth for authentication;
 
 ## Getting Started
 
@@ -36,13 +39,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Development
 
@@ -76,6 +77,9 @@ yarn clean
 # deps upgrade
 yarn npm:check
 
+# dev with specific env file (default is .env.development)
+npx dotenv -e .env._test npx next dev
+
 ```
 
 ## Deploy on Vercel
@@ -91,6 +95,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 - [With TypeScript](https://www.typescriptlang.org/docs/) - learn about TypeScript features and API.
 - [With ESLint](https://eslint.org/docs/user-guide/getting-started) - learn about ESLint features and API.
 - [With Prettier](https://prettier.io/docs/en/index.html) - learn about Prettier features and API.
+- [T3 App](https://create.t3.gg/en/usage/trpc) - learn about T3 App features and API.
+- [Next-i18next](https://github.com/i18next/next-i18next)
 
 ## Contribution
 
