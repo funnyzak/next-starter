@@ -1,9 +1,9 @@
-import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
 import { api } from '@/utils/api'
 import { Example } from '@prisma/client'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
-const HelloPage = () => {
+const ExamplePage = () => {
   const [example, setExample] = useState<Example>()
   const helloQuery = api.example.hello.useQuery({ text: 'Leon' })
   const year = api.example.year.useQuery()
@@ -23,8 +23,11 @@ const HelloPage = () => {
       <h1>{helloQuery.data?.greeting}</h1>
       <h1>{example?.createdAt.toString()}</h1>
       <h1>{year.data}</h1>
+      <Link href={'/example'} locale="zh-CN">
+        切换中文
+      </Link>
     </div>
   )
 }
 
-export default HelloPage
+export default ExamplePage

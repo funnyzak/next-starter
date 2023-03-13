@@ -26,6 +26,8 @@ NEXT-Starter is a front-end project scaffold based on Next.js 13, which is a goo
 - With ESLint and Prettier for code linting;
 - With Lint Staged and Husky for pre-commit linting;
 - Add rate limit for API;
+- Create with t3-cli;
+- With Next-auth for authentication;
 
 ## Getting Started
 
@@ -93,6 +95,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 - [With TypeScript](https://www.typescriptlang.org/docs/) - learn about TypeScript features and API.
 - [With ESLint](https://eslint.org/docs/user-guide/getting-started) - learn about ESLint features and API.
 - [With Prettier](https://prettier.io/docs/en/index.html) - learn about Prettier features and API.
+- [T3 App](https://create.t3.gg/en/usage/trpc) - learn about T3 App features and API.
+- [Next-i18next](https://github.com/i18next/next-i18next)
 
 ## Contribution
 
