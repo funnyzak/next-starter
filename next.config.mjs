@@ -11,7 +11,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   experimental: {
-    appDir: true,
+    appDir: false,
   },
 
   // safe config

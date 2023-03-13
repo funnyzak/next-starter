@@ -1,5 +1,5 @@
 root = true
-[*.{js,ts,cjs,mjs,jsx,tsx,json,css,scss,less,html}]
+[*.{json,css,scss,less}]
 charset = utf-8 # 设置文件字符集为 utf-8
 end_of_line = lf # 控制换行类型(lf | cr | crlf)
 insert_final_newline = true # 始终在文件末尾插入一个新行
