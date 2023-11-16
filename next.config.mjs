@@ -9,9 +9,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    appDir: false,
-  },
+  experimental: {},
 
   /**
    * If you have the "experimental: { appDir: true }" setting enabled, then you
