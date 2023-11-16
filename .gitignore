@@ -34,3 +34,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.env._*
+
+# husky
+.husky/_
+
+.eslintcache
+
+# prisma
+*.db
+**journal
+**/migrations
+node_modules

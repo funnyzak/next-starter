@@ -1,22 +1,116 @@
 {
   "name": "next-starter",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "description": "NEXT-Starter is a front-end project scaffold based on Next.js 13, which is a good starting point for your next project.",
+  "private": false,
   "scripts": {
+    "postinstall": "patch-package && prisma generate",
+    "prisma:dev": "dotenv -e .env.development prisma migrate dev --name init",
+    "prisma:prod": "dotenv -e .env.production prisma migrate dev --name init",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "eslint:check": "eslint --ext .js,.ts,.tsx,.cjs ./src",
+    "eslint:fix": "eslint --fix --ext .js,.ts,.tsx,.cjs ./src",
+    "style:check": "prettier --check --loglevel warn \"src/**/*.{js,ts,json,tsx,css,less,html,md,cjs}\"",
+    "style:fix": "prettier --write --loglevel warn \"src/**/*.{js,ts,json,tsx,css,less,html,md,cjs}\"",
+    "clean": "npx rimraf node_modules",
+    "clean:cache": "npx rimraf node_modules/.cache",
+    "npm:check": "npx npm-check-updates",
+    "npm:check:i": "npx npm-check-updates -i",
+    "npm:check:u": "npx npm-check-updates -u",
+    "num:update:minor": "npx npm-check-updates -u --target minor",
+    "lint-staged": "lint-staged",
+    "prepare": "if [[ $NODE_ENV != \"production\" ]]; then husky install; fi && patch-package"
   },
   "dependencies": {
-    "@types/node": "18.15.0",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
+    "@next-auth/prisma-adapter": "1.0.7",
+    "@prisma/client": "5.6.0",
+    "@tailwindcss/forms": "0.5.7",
+    "@tanstack/react-query": "^4.35.3",
+    "@trpc/client": "10.43.3",
+    "@trpc/next": "10.43.3",
+    "@trpc/react-query": "10.43.3",
+    "@trpc/server": "10.43.3",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "@upstash/ratelimit": "0.4.4",
+    "@upstash/redis": "1.25.1",
+    "clsx": "2.0.0",
+    "eslint": "8.53.0",
+    "eslint-config-next": "14.0.2",
+    "jsencrypt": "3.3.2",
+    "next": "14.0.2",
+    "next-auth": "4.24.5",
+    "pino": "8.16.2",
+    "prisma": "5.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.5"
+    "superjson": "2.2.1",
+    "tailwind-merge": "2.0.0",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.44.7",
+    "@types/prettier": "2.7.3",
+    "autoprefixer": "10.4.16",
+    "dotenv-cli": "7.3.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "husky": "8.0.3",
+    "lint-staged": "15.1.0",
+    "npm-check-updates": "16.14.6",
+    "patch-package": "8.0.0",
+    "postcss": "8.4.31",
+    "prettier": "3.1.0",
+    "rimraf": "5.0.5",
+    "tailwindcss": "3.3.5",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2"
+  },
+  "lint-staged": {
+    "*.{js,cjs,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --cache"
+    ],
+    "*.{md,html,json,css,less,scss,sass}": [
+      "prettier --write"
+    ]
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/funnyzak/next-starter/issues"
+  },
+  "homepage": "https://github.com/funnyzak/next-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funnyzak/next-starter.git"
+  },
+  "keywords": [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "CSS",
+    "HTML",
+    "web development",
+    "front-end development",
+    "responsive design",
+    "static site generation",
+    "server-side rendering",
+    "SEO optimization",
+    "RESTful API",
+    "GraphQL",
+    "TypeScript",
+    "Git",
+    "npm",
+    "ESLint",
+    "Prettier"
+  ],
+  "author": "leon <silenceace@gmail.com>",
+  "engines": {
+    "node": ">=18.17.0"
   }
 }
