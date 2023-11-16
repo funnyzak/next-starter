@@ -46,3 +46,4 @@ next-env.d.ts
 *.db
 **journal
 **/migrations
+node_modules
