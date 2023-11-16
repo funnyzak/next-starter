@@ -15,11 +15,11 @@
 [sg-image]: https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=flat-square
 [tag-image]: https://img.shields.io/github/tag/funnyzak/next-starter.svg
 
-Next-Starter is a front-end project scaffold based on `Next.js 13`, which is a good starting point for your next project.
+Next-Starter is a front-end project scaffold based on `Next.js 14`, which is a good starting point for your next project. (Node.js >= 18.17.0)
 
 ## Features
 
-- Build with Next.js 13;
+- Build with Next.js 14;
 - With prisma for database;
 - With Tailwind CSS and PostCSS for styling;
 - With TypeScript for type checking;

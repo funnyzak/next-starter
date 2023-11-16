@@ -34,7 +34,7 @@
     "@trpc/next": "10.43.3",
     "@trpc/react-query": "10.43.3",
     "@trpc/server": "10.43.3",
-    "@types/node": "18.15.0",
+    "@types/node": "18.17.0",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
     "@upstash/ratelimit": "0.4.4",
@@ -43,8 +43,8 @@
     "eslint": "8.53.0",
     "eslint-config-next": "14.0.2",
     "jsencrypt": "3.3.2",
-    "next": "13.2.4",
-    "next-auth": "4.20.1",
+    "next": "14.0.2",
+    "next-auth": "4.24.5",
     "pino": "8.16.2",
     "prisma": "4.11.0",
     "react": "18.2.0",
@@ -111,6 +111,6 @@
   ],
   "author": "leon <silenceace@gmail.com>",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.17.0"
   }
 }
