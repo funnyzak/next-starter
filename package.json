@@ -34,7 +34,7 @@
     "@trpc/next": "10.43.3",
     "@trpc/react-query": "10.43.3",
     "@trpc/server": "10.43.3",
-    "@types/node": "20.9.0",
+    "@types/node": "20.10.0",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
     "@upstash/ratelimit": "0.4.4",
